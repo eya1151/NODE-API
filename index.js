@@ -7,8 +7,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/posts', postsRoutes);
-
+app.use('/posts/register',postsRoutes);
+app.use('/posts/post', postsRoutes);
 app.listen(5000, () => console.log('Server started: 5000'));

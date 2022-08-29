@@ -1,0 +1,73 @@
+
+// // login
+// router.post("/login",async(req,res)=>{
+
+//   //res.send(req.body);
+//    // validate user data
+//    const {error} = loginValidation(req.body);
+//    if (error) { res.status(400).send(error.details[0].message);
+//    }
+//     //checking email
+//   const user= await PostsModel.findOne({email:req.body.email});
+//  //res.send(user);
+//  if (user) {
+
+//  //  // checking password
+
+//     const validpass=await bcrypt.compare(req.body.password,user.password);
+//     console.log(req.body.password);
+ 
+//    //if (validpass) { res.status(400).send("password valid")}
+//  //  };
+
+// //  if (user){
+// //   const accessToken = generatetoken(user);
+// //  const refreshToken = generaterefreshtoken(user);
+// //  refreshToken.push(refreshToken);
+// //  res.send({email:user._email,
+// //   password:user._password,
+// //   accessToken,
+// //   refreshToken})
+
+// //  }
+//   const token =JWT.sign({_id: user._id},"aaaaa" ,{expiresIn:"15m"});
+//   res.header("auth-token",token).send(token);
+//   /* const refreshtoken =JWT.sign({_id: user._id},"bbbbb" ,{expiresIn:"20m"}); */
+//   res.send(token /* refreshtoken */);
+ 
+// }})
+
+
+// // let refreshtoken=[]
+// // // refresh token 
+// // router.post('/refresh', (req, res) => {
+// //   //take the refresh token from the user
+// //   const refreshToken = req.body.token;
+// //    //send error if there is no token or it's invalid
+// //   if (!refreshToken) {res.status(401).send("You are not authenticated!");}
+// //   if (!refreshToken.includes(refreshToken)){
+// //   { res.status(403).send ("refresh token is not valide ")}
+// //   }
+// //   jwt.verify(refreshTokenn),"bbbbb",(error,user)=>{
+// //     err && console.log(err);
+// //     refreshToken=refreshToken.filter((token)=>token !==refreshToken);
+// //   const newtoken =generatetoken(user)
+// // const newrefreshtoken =generaterefreshtoken(user)
+
+// //   refreshToken.push(newtoken);
+// //   res.status(200).send({
+// //     accessToken:newtoken,
+// //     refreshToken:newrefreshtoken,
+// //   })
+
+// //   }
+  
+// //   // if everything is ok; create new access token refresh token and send to user 
+
+// //   });
+// //   const generatetoken=(user)=>{
+// //     {JWT.sign({_id: user._id},"aaaaa",{expiresIn:"15m"} )};
+// //   }
+// //   const generaterefreshtoken=(user)=>{
+// //      { JWT.sign({_id: user._id},"bbbbb" )};
+// //   }
